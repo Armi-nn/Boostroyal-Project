@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <section>
+        <nav>
+            <div id="divnaav">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="logo-icon 1" clip-path="url(#clip0_509_14852)">
+                        <circle id="Ellipse 133" cx="19.7967" cy="19.0201" r="13.5858" fill="#0F061E" />
+                        <g id="Layer 2">
+                            <g id="Layer 1">
+                                <path id="Vector"
+                                    d="M19.4083 0C15.5697 0 11.8173 1.13828 8.62563 3.27089C5.43395 5.40349 2.94634 8.43465 1.47738 11.9811C0.00840928 15.5275 -0.375939 19.4298 0.372933 23.1946C1.12181 26.9595 2.97027 30.4177 5.68456 33.132C8.39886 35.8463 11.8571 37.6948 15.6219 38.4436C19.3868 39.1925 23.2891 38.8082 26.8355 37.3392C30.3819 35.8702 33.4131 33.3826 35.5457 30.1909C37.6783 26.9993 38.8166 23.2469 38.8166 19.4083C38.8166 14.2609 36.7718 9.32431 33.132 5.68455C29.4923 2.0448 24.5557 0 19.4083 0V0ZM8.75702 26.6515L8.30675 14.8357L13.974 19.7266L21.9391 26.6515H8.75702ZM24.2837 26.6515L14.7503 18.3835L19.4083 10.6746L29.0814 26.6515H24.2837ZM30.1294 25.4248L25.8441 18.2981L30.5021 14.8357L30.1294 25.4248Z"
+                                    fill="url(#paint0_linear_509_14852)" />
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_509_14852" x1="1.44603e-07" y1="19.4083" x2="38.8166"
+                            y2="19.4083" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF7E45" />
+                            <stop offset="1" stop-color="#FF6550" />
+                        </linearGradient>
+                        <clipPath id="clip0_509_14852">
+                            <rect width="38.8166" height="38.8166" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg id="svgp" xmlns="http://www.w3.org/2000/svg" width="175.01" height="32.197"
+                    viewBox="0 0 1330.872 244.844">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                                fill-rule: evenodd;
+                            }
+                        </style>
+                    </defs>
+                    <path id="text" class="cls-1"
+                        d="M555.589,349.348c0,12.846,1.691,33.227-12.4,38.531v0.836h46.485c21.13,0,43.387.836,63.108-8.655,18.875-8.932,33.807-27.358,33.807-48.86,0-27.361-20.566-44.109-45.922-49.415,16.059-6.979,28.174-17.587,28.174-36.294,0-24.85-21.694-40.484-58.882-40.484h-66.77v0.837c14.368,5.305,12.4,25.685,12.4,38.25V349.348Zm28.737,17.032V297.419l19.721-1.117c24.792-1.4,51.274,10.332,51.274,37.412,0,26.525-23.383,37.136-46.485,34.9Zm0-87.386V224.271l18.875-1.952c16.9-1.678,34.935,8.374,34.935,27.64,0,22.893-26.2,29.035-44.513,29.035h-9.3ZM773.365,392.345c39.723,0,73.531-29.036,73.531-69.24,0-18.986-8.734-37.413-23.1-49.976-13.523-11.725-29.018-16.471-47.049-16.471-40.569,0-74.658,27.081-74.658,68.961C702.087,365.266,734.767,392.345,773.365,392.345Zm1.408-18.424c-28.736,0-44.232-27.643-44.232-53.329,0-25.128,16.9-45.508,43.1-45.508,30.145,0,44.8,26.805,44.8,53.883C818.441,354.1,800.692,373.921,774.773,373.921Zm156.361,18.424c39.724,0,73.536-29.036,73.536-69.24,0-18.986-8.738-37.413-23.106-49.976-13.523-11.725-29.018-16.471-47.049-16.471-40.569,0-74.659,27.081-74.659,68.961C859.856,365.266,892.538,392.345,931.134,392.345Zm1.409-18.424c-28.737,0-44.231-27.643-44.231-53.329,0-25.128,16.9-45.508,43.1-45.508,30.145,0,44.795,26.805,44.795,53.883C976.211,354.1,958.462,373.921,932.543,373.921Zm175.8-113.632c-10.14-2.795-20.84-3.631-31.27-3.631-24.23,0-55.22,7.818-55.22,37.409,0,42.442,76.35,33.5,76.35,61.7,0,14.242-19.44,18.151-30.99,18.151-19.44,0-36.62-5.307-52.96-15.637l9.86,27.358a96.664,96.664,0,0,0,36.62,6.7c36.34,0,63.11-17.589,63.11-43.553,0-44.391-76.35-35.457-76.35-60.306,0-11.167,16.9-13.4,26.2-13.4a73.422,73.422,0,0,1,34.65,8.936V260.289Zm70.72,18.424h16.9c7.33,0,15.78-.557,20.29,5.307h0.84V258.612h-0.84c-2.82,1.677-7.05,1.677-10.71,1.677h-26.48v-41.6h-11.27c0,25.965-7.04,45.511-33.53,49.977v10.049h19.16v58.071c0,10.892-3.94,55.561,39.73,55.561a31.994,31.994,0,0,0,9.01-1.4l14.93-19.819c-3.66,1.394-7.32,2.793-11.27,2.793-30.14,0-26.76-28.757-26.76-39.368v-55.84Zm64.01-73.722v0.839c14.38,5.3,12.4,25.688,12.4,38.526V349.61c0,12.563,1.98,33.223-12.4,38.247v0.84h53.85v-0.84c-14.38-5.024-12.69-25.4-12.69-38.247V224.538a149.167,149.167,0,0,1,19.17-2.233c18.89-.84,36.37,10.887,36.37,30.986,0,26.247-26.22,36.572-48.77,39.923l25.94,39.364,34.39,42.156c8.46,10.334,17.77,13.963,32.71,13.963h25.94c-16.07-10.055-33.84-24.569-45.68-39.087l-40.6-50.531c23.12-5.306,44.83-24.569,44.83-49.136,0-25.4-20.58-44.952-58.36-44.952h-67.1Zm219.07,187.335c39.76,0,73.59-29.036,73.59-69.237,0-18.986-8.74-37.413-23.12-49.974-13.53-11.725-29.04-16.471-47.09-16.471-40.59,0-74.71,27.079-74.71,68.957C1390.81,365.246,1423.52,392.326,1462.14,392.326Zm1.41-18.43c-28.76,0-44.26-27.634-44.26-53.32,0-25.131,16.91-45.51,43.13-45.51,30.17,0,44.83,26.8,44.83,53.883C1507.25,354.08,1489.49,373.9,1463.55,373.9Zm153.95-10.047-41.45-92.409c-3.1-6.982-8.46-11.167-18.89-11.167H1533.2v0.837c13.53,5.025,16.91,14.8,22.55,27.081l34.4,74.263c5.36,11.722,5.36,13.118,14.66,22.333l1.13,1.394-1.69,4.47c-5.92,15.355-14.38,36.292-34.12,36.292-5.92,0-10.99-3.627-15.79-6.7l-25.37,18.148c10.99,4.188,21.43,6.979,33.55,6.979,26.5,0,46.24-10.608,61.46-46.623l58.65-138.473h-39.48v0.837c13.54,6.144,7.05,20.938,2.82,31.825ZM1821.35,373.9c-23.4-2.508-23.97-10.884-23.97-32.94V299.079c-0.28-33.781-23.4-42.435-53.85-42.435l-18.32,1.672-18.89,27.919c12.68-5.862,23.96-11.169,38.34-11.169,10.43,0,27.07,4.472,27.07,17.869,0,30.432-84.3,6.42-84.3,58.353,0,23.171,19.73,41.038,48.21,41.038a86.813,86.813,0,0,0,14.66-1.4l16.63-20.94c-6.76,1.956-13.53,3.909-20.3,3.909-14.94,0-30.73-5.581-30.73-22.888,0-17.032,15.23-20.1,28.76-23.177,9.3-2.23,18.89-4.464,27.07-8.652V363.29c0,22.333,18.6,27.919,37.21,29.036Zm6.2-168.9v0.839c12.13,6.982,10.44,17.309,10.44,30.155V357.708c0,12.841,1.69,23.17-10.44,30.149v0.84h46.53v-0.84c-12.41-6.979-10.44-17.308-10.44-30.149V200.527h-0.84c-4.23,4.746-11.56,4.464-18.05,4.464h-17.2Z"
+                        transform="translate(-543.188 -200.531)" />
+                </svg>
+            </div>
+            <div id="Employees">
+                <a href="">421 Employees</a>
+                <a href="">Premium</a>
+                <a href="">Loyalty</a>
+                <a href="">Support</a>
+            </div>
+
+            <div id="navmen">
+                <svg fill="none" height="19" viewBox="0 0 16 19" width="16" xmlns="http://www.w3.org/2000/svg"
+                    on:click="q-9996dfce.js#s_JHZ2u4sHeR0[0]" q:id="e">
+                    <path
+                        d="M1 17.4083V16.4083C1 14.5517 1.7375 12.7713 3.05025 11.4585C4.36301 10.1458 6.14348 9.40826 8 9.40826M8 9.40826C9.85652 9.40826 11.637 10.1458 12.9497 11.4585C14.2625 12.7713 15 14.5517 15 16.4083V17.4083M8 9.40826C9.06087 9.40826 10.0783 8.98684 10.8284 8.23669C11.5786 7.48655 12 6.46913 12 5.40826C12 4.3474 11.5786 3.32998 10.8284 2.57984C10.0783 1.82969 9.06087 1.40826 8 1.40826C6.93913 1.40826 5.92172 1.82969 5.17157 2.57984C4.42143 3.32998 4 4.3474 4 5.40826C4 6.46913 4.42143 7.48655 5.17157 8.23669C5.92172 8.98684 6.93913 9.40826 8 9.40826Z"
+                        stroke="#FF9155" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                </svg>
+                <div id="mennm">
+                    <a id="menna" href="#">
+                        <div id="menn">
+                            <svg fill="none" height="17" viewBox="0 0 20 17" width="20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 15.4083H4.5M19 8.40826H6M19 1.40826H1" stroke="#FF9155"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+        <div class="show" id="menohdivv">
+            <div id="menoh">
+                <div id="menohdivvv">
+                    <div id="menohdivvvv">
+                        <div id="Servicesmh">
+                            <p>Services</p>
+                        </div>
+                        <div id="menohdivimg">
+                            <div id="imgsecc1">
+                                <img loading="lazy" alt="Wild Rift" height="85"
+                                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/wildrift.png"
+                                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/wildrift.png 2x"
+                                    style="width: 85px; height: 85px" title="Wild Rift" width="85" q:id="2a">
+                                <p>LOL</p>
+                            </div>
+                            <div>
+                                <img loading="lazy" alt="Valorant" height="85"
+                                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/valorant.png"
+                                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/valorant.png 2x"
+                                    style="width: 85px; height: 85px" title="Valorant" width="85" q:id="26">
+                                <p>Accounts</p>
+                            </div>
+                            <div>
+                                <img loading="lazy" alt="Accounts" height="85"
+                                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/smurf.png"
+                                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/smurf.png 2x"
+                                    style="width: 85px; height: 85px" title="Accounts" width="85" q:id="22">
+                                <p>Valorant</p>
+                            </div>
+                            <div>
+                                <img loading="lazy" alt="LoL" height="85"
+                                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/lol.png"
+                                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/lol.png 2x"
+                                    style="width: 85px; height: 85px" title="LoL" width="85" q:id="1y">
+                                <p>Wild Rift</p>
+                            </div>
+                            <div>
+                                <img loading="lazy" alt="TFT" height="85"
+                                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/tft.png"
+                                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/tft.png 2x"
+                                    title="TFT" width="85" style="width: 85px; height: 85px;">
+                                <p>LOR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <img id="imgnav" src="img/new-home-slider-bg.webp" alt="#">
+
+        <div id="The-Leadingdiv">
+            <h2 id="The-Leading-ELO-Boost-Platform">The Leading ELO Boost Platform</h2>
+        </div>
+        <div id="Reach-your-dream">
+            <p>Reach your dream rank effortlessly with the finest LoL Boost, Coaching</p>
+        </div>
+        <div id="Reach-your-dreamm">
+            <p>& Accounts services.</p>
+        </div>
+    </section>
+    <section id="divsection1btn">
+        <div id="btnrankbtnbuy">
+            <div id="btnrank">
+                <button id="Rank-up-btn">Rank up</button>
+            </div>
+            <div id="btnbuy">
+                <button id="Buy-account-btn">Buy account</button>
+            </div>
+        </div>
+        <div id="captinstar">
+            <p>Excellent</p>
+            <img id="imgstars" src="img/stars-5.svg" alt="">
+            <p>See our 7,742 reviews on </p>
+            <img id="imgesatar" src="img/logo-white.svg" alt="">
+        </div>
+        <div id="sygmos">
+            <svg fill="none" height="24" style="right: 10%; bottom: 0" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg" class="absolute sm:static sm:mt-8  animate-bounce cursor-pointer"
+                on:click="q-575ddc16.js#s_tc8AsOutsbo[0]" q:id="1t">
+                <path
+                    d="M12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V14C20 16.1217 19.1571 18.1566 17.6569 19.6569C16.1566 21.1571 14.1217 22 12 22C9.87827 22 7.84344 21.1571 6.34315 19.6569C4.84285 18.1566 4 16.1217 4 14V10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2ZM12 2V9"
+                    stroke="#FF9155" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg>
+        </div>
+    </section>
+    <section id="section3">
+        <h3>What we offer</h3>
+        <p>Pick from our featured services.</p>
+        <div id="section3-div-cart">
+            <div style="background-image: url(&quot;/images/services/lol-bg.png&quot;); border-radius: 16px;"
+                class="flex flex-col gap-8 items-center justify-center relative p-16 sm:p-4 sm:py-2 sm:justify-start sm:gap-4 sm:flex-row mx-auto z-10 bg-cover bg-center">
+                <!--qv q:id=1x q:key=0AKC:gU_0--><!--qv q:key=g9_0--><img loading="lazy" alt="LoL" height="85"
+                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/lol.png"
+                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/lol.png 2x"
+                    style="width: 85px; height: 85px" title="LoL" width="85" q:id="1y"><!--/qv--><!--/qv-->
+                <h3 class="text-lg"><!--t=1z-->LoL<!----></h3>
+            </div>
+            <div style="background-image: url(&quot;/images/services/smurf-bg.png&quot;); border-radius: 16px;"
+                class="flex flex-col gap-8 items-center justify-center relative p-16 sm:p-4 sm:py-2 sm:justify-start sm:gap-4 sm:flex-row mx-auto z-10 bg-cover bg-center">
+                <!--qv q:id=21 q:key=0AKC:gU_0--><!--qv q:key=g9_0--><img loading="lazy" alt="Accounts" height="85"
+                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/smurf.png"
+                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/smurf.png 2x"
+                    style="width: 85px; height: 85px" title="Accounts" width="85" q:id="22"><!--/qv--><!--/qv-->
+                <h3 class="text-lg"><!--t=23-->Accounts<!----></h3>
+            </div>
+            <div style="background-image: url(&quot;/images/services/valorant-bg.png&quot;); border-radius: 16px;"
+                class="flex flex-col gap-8 items-center justify-center relative p-16 sm:p-4 sm:py-2 sm:justify-start sm:gap-4 sm:flex-row mx-auto z-10 bg-cover bg-center">
+                <!--qv q:id=25 q:key=0AKC:gU_0--><!--qv q:key=g9_0--><img loading="lazy" alt="Valorant" height="85"
+                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/valorant.png"
+                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/valorant.png 2x"
+                    style="width: 85px; height: 85px" title="Valorant" width="85" q:id="26"><!--/qv--><!--/qv-->
+                <h3 class="text-lg"><!--t=27-->Valorant<!----></h3>
+            </div>
+            <div style="background-image: url(&quot;/images/services/wildrift-bg.png&quot;); border-radius: 16px;"
+                class="flex flex-col gap-8 items-center justify-center relative p-16 sm:p-4 sm:py-2 sm:justify-start sm:gap-4 sm:flex-row mx-auto z-10 bg-cover bg-center">
+                <!--qv q:id=29 q:key=0AKC:gU_0--><!--qv q:key=g9_0--><img loading="lazy" alt="Wild Rift" height="85"
+                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/wildrift.png"
+                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/wildrift.png 2x"
+                    style="width: 85px; height: 85px" title="Wild Rift" width="85" q:id="2a"><!--/qv--><!--/qv-->
+                <h3 class="text-lg"><!--t=2b-->Wild Rift<!----></h3>
+            </div>
+            <div class="flex flex-col gap-8 items-center justify-center relative p-16 sm:p-4 sm:py-2 sm:justify-start sm:gap-4 sm:flex-row mx-auto z-10 bg-cover bg-center"
+                style="background-image: url(&quot;/images/services/tft-bg.png&quot;); border-radius: 16px;">
+                <!--qv --><!--qv --><img loading="lazy" alt="TFT" height="85"
+                    src="https://boostroyal.com/cdn-cgi/image/width=85,quality=75,format=auto/images/services/tft.png"
+                    srcset="https://boostroyal.com/cdn-cgi/image/width=170,quality=75,format=auto/images/services/tft.png 2x"
+                    title="TFT" width="85" style="width: 85px; height: 85px;"><!--/qv--><!--/qv-->
+                <h3 class="text-lg">TFT</h3>
+            </div>
+        </div>
+    </section>
+    <section id="section-4">
+        <div>
+            <div id="section4div1">
+                <h3>Our Key Features</h3>
+                <div>
+                    <p id="in-gamesection-4">The most satisfying in-game service.</p>
+                    <div id="p-section-4-div">
+                        <p class="p-section-4">Forget about frustrating games; reach your deserved</p>
+                        <p class="p-section-4">rank effortlessly. Whether you're purchasing League,</p>
+                        <p class="p-section-4">Valorant, or Wild Rift Boosting, you are privileged to all</p>
+                        <p class="p-section-4">premium features.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section-4Get-starteddivv">
+                <button id="section-4Get-started">Get started</button>
+            </div>
+            <div id="section4div2">
+                <div id="homeicon-1"><img src="img/home-feature-icon-1.svg" alt="">
+                    <h4>24/7 Support</h4>
+                    <p class="p1section4">Use our live support to receive</p>
+                    <p>premium help whenever you are</p>
+                    <p>in need.</p>
+                </div>
+                <div id="homeicon-2">
+                    <img src="img/home-feature-icon-2.svg  " alt="#">
+                    <h4>Appear Offline</h4>
+                    <p class="p1section4">The booster plays offline, so the</p>
+                    <p>process is undetectable from your</p>
+                    <p>friend list.</p>
+                </div>
+                <div id="homeicon-3">
+                    <img src="img/home-feature-icon-3.svg" alt="">
+                    <h4>VPN Protection</h4>
+                    <p class="p1section4">Your account remains safe with</p>
+                    <p>our automated VPN system.</p>
+                </div>
+                <div id="homeicon-4"><img src="img/home-feature-icon-4.svg" alt="">
+                    <h4>3-10% Cashback
+                        <p class="p1section4">Receive significant discounts,</p>
+                        <p>cashback rewards on all orders,</p>
+                        <p>and free LoL accounts.</p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-5">
+        <div id="section5div1">
+            <h3>Experience flow</h3>
+            <p>An effortless rank-up process.</p>
+        </div>
+        <img id="imgsection5" src="img/1.webp" alt="#">
+        <div id="section5Selectdivv">
+            <div id="section5Select">
+                <h4>Select Your Favored Service</h4>
+                <div id="div-section5p">
+                    <div id="div-section5pdiv1">
+                        <p id="pc1">First, select your game and method of ranking up. There are various ways to </p>
+                        <p id="pc2"> reach your desired goal. Choose the one which fits most to your needs.</p>
+                    </div>
+                    <div id="div-section5pdiv2">
+                        <p id="pc3"> You can always talk to us on live chat if you need help.</p>
+                        <p id="pc4"> <i class='bx bx-check'></i> Free additional customizations.</p>
+                        <p id="pc5"> <i class='bx bx-check'></i> Intuitive and straightforward purchase process.</p>
+                        <p id="pc6"></p>
+                    </div>
+                </div>
+                <button id="btnsection5">Get started</button>
+            </div>
+        </div>
+        <div id="sercldiv">
+            <div id="sercl1" class="serclw sercl"></div>
+            <div id="sercel2" class="secton5serclm sercl"></div>
+            <div id="sercel3" class="secton5serclm sercl"></div>
+        </div>
+        <div id="sectom5divcarts">
+            <div id="section5cart2v">
+                <div id="section5cart1" class="sectom5divcartsCart colorcat">
+                    <img id="section5ImgCart1" src="img/1-icon-active.svg" alt="">
+                    <h3>1- Select Service</h3>
+                    <div>
+                        <p>Select and customize</p>
+                        <p>your desired service.</p>
+                    </div>
+                </div>
+                <div id="section5cart2" class="sectom5divcartsCart">
+                    <img id="section5ImgCart2" src="img/2-icon.svg" alt="#">
+                    <h3>2- Complete </h3>
+                    <br><br>
+                    <h3>Payment</h3>
+                    <div>
+                        <p>Choose your preferred</p>
+                        <p>payment method.</p>
+                    </div>
+                </div>
+                <div id="section5cart3" class="sectom5divcartsCart">
+                    <img id="section5ImgCart3" src="img/3-icon.svg" alt="#">
+                    <h3>3- Rank-up</h3>
+                    <div>
+                        <p>Follow your order and live</p>
+                        <p>chat with your booster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="srction5OurCommunityDiv">
+            <h3>Our Community</h3>
+            <p>Explore our reviews.</p>
+        </div>
+        <div id="cartGiridSectoin">
+            <svg fill="none" height="25" viewBox="0 0 98 25" width="98" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.7575 8.52597L35.6719 8.52597L35.6719 10.3716L31.7682 10.3716L31.7682 20.776L29.6285 20.776L29.6285 10.3716L25.7412 10.3716L25.7575 8.52597ZM35.2472 11.907L37.0766 11.907L37.0766 13.622L37.1092 13.622C37.1746 13.377 37.2889 13.1483 37.4522 12.9196C37.6156 12.691 37.8116 12.4786 38.0566 12.299C38.2852 12.103 38.5466 11.956 38.8406 11.8416C39.1182 11.7273 39.4122 11.662 39.7062 11.662C39.9349 11.662 40.0982 11.6783 40.1799 11.6783C40.2616 11.6946 40.3596 11.711 40.4412 11.711L40.4412 13.5893C40.3106 13.5566 40.1636 13.5403 40.0166 13.524C39.8696 13.5076 39.7389 13.4913 39.5919 13.4913C39.2652 13.4913 38.9549 13.5566 38.6609 13.6873C38.3669 13.818 38.1219 14.014 37.8932 14.259C37.6809 14.5203 37.5012 14.8306 37.3706 15.2063C37.2399 15.582 37.1746 16.023 37.1746 16.513L37.1746 20.727L35.2146 20.727L35.2472 11.907ZM49.4246 20.776L47.4972 20.776L47.4972 19.5346L47.4646 19.5346C47.2196 19.992 46.8602 20.335 46.3866 20.6126C45.9129 20.8903 45.4229 21.021 44.9329 21.021C43.7732 21.021 42.9239 20.7433 42.4012 20.1553C41.8786 19.5836 41.6172 18.7016 41.6172 17.542L41.6172 11.907L43.5772 11.907L43.5772 17.346C43.5772 18.13 43.7242 18.6853 44.0346 18.9956C44.3286 19.3223 44.7532 19.4856 45.2922 19.4856C45.7006 19.4856 46.0436 19.4203 46.3212 19.2896C46.5989 19.159 46.8276 18.9956 46.9909 18.7833C47.1706 18.571 47.2849 18.3096 47.3666 18.0156C47.4482 17.7216 47.4809 17.395 47.4809 17.052L47.4809 11.907L49.4409 11.907L49.4409 20.776L49.4246 20.776ZM52.7566 17.934C52.8219 18.5056 53.0342 18.8976 53.4099 19.1426C53.7856 19.3713 54.2429 19.4856 54.7656 19.4856C54.9452 19.4856 55.1576 19.4693 55.3862 19.4366C55.6149 19.404 55.8436 19.355 56.0396 19.2733C56.2519 19.1916 56.4152 19.0773 56.5459 18.914C56.6766 18.7506 56.7419 18.5546 56.7256 18.3096C56.7092 18.0646 56.6276 17.8523 56.4479 17.689C56.2682 17.5256 56.0559 17.4113 55.7946 17.297C55.5332 17.199 55.2229 17.1173 54.8799 17.052C54.5369 16.9866 54.1939 16.905 53.8346 16.8233C53.4752 16.7416 53.1159 16.6436 52.7729 16.5293C52.4299 16.415 52.1359 16.268 51.8582 16.0556C51.5969 15.8596 51.3682 15.6146 51.2212 15.3043C51.0579 14.994 50.9762 14.6346 50.9762 14.1773C50.9762 13.6873 51.0906 13.2953 51.3356 12.9686C51.5642 12.642 51.8746 12.3806 52.2339 12.1846C52.5932 11.9886 53.0016 11.8416 53.4426 11.76C53.8836 11.6783 54.3082 11.6456 54.7002 11.6456C55.1576 11.6456 55.5986 11.6946 56.0069 11.7926C56.4152 11.8906 56.8072 12.0376 57.1339 12.2663C57.4769 12.4786 57.7546 12.7726 57.9669 13.1156C58.1956 13.4586 58.3262 13.8833 58.3916 14.3733L56.3499 14.3733C56.2519 13.8996 56.0396 13.5893 55.7129 13.426C55.3699 13.2626 54.9942 13.181 54.5532 13.181C54.4226 13.181 54.2429 13.1973 54.0632 13.2136C53.8672 13.2463 53.7039 13.279 53.5242 13.3443C53.3609 13.4096 53.2139 13.5076 53.0996 13.622C52.9852 13.7363 52.9199 13.8996 52.9199 14.0956C52.9199 14.3406 53.0016 14.5203 53.1649 14.6673C53.3282 14.8143 53.5406 14.9286 53.8182 15.043C54.0796 15.141 54.3899 15.2226 54.7329 15.288C55.0759 15.3533 55.4352 15.435 55.7946 15.5166C56.1539 15.5983 56.4969 15.6963 56.8399 15.8106C57.1829 15.925 57.4932 16.072 57.7546 16.2843C58.0159 16.4803 58.2446 16.7253 58.4079 17.0193C58.5712 17.3133 58.6529 17.689 58.6529 18.1136C58.6529 18.6363 58.5386 19.0773 58.2936 19.453C58.0486 19.8123 57.7382 20.1226 57.3626 20.3513C56.9869 20.58 56.5459 20.7433 56.0886 20.8576C55.6149 20.9556 55.1576 21.021 54.7002 21.021C54.1449 21.021 53.6222 20.9556 53.1486 20.825C52.6749 20.6943 52.2502 20.4983 51.9072 20.2533C51.5642 19.992 51.2866 19.6816 51.0906 19.2896C50.8946 18.914 50.7802 18.4566 50.7639 17.9176L52.7402 17.9176L52.7402 17.934L52.7566 17.934ZM59.2082 11.907L60.6946 11.907L60.6946 9.2283L62.6546 9.2283L62.6546 11.8906L64.4186 11.8906L64.4186 13.3443L62.6546 13.3443L62.6546 18.081C62.6546 18.2933 62.6709 18.4566 62.6872 18.62C62.7036 18.767 62.7526 18.8976 62.8016 18.9956C62.8669 19.0936 62.9649 19.1753 63.0792 19.2243C63.2099 19.2733 63.3732 19.306 63.6019 19.306C63.7326 19.306 63.8796 19.306 64.0102 19.2896C64.1409 19.2733 64.2879 19.257 64.4186 19.2243L64.4186 20.7433C64.2062 20.776 63.9939 20.7923 63.7816 20.8086C63.5692 20.8413 63.3732 20.8413 63.1446 20.8413C62.6219 20.8413 62.2136 20.7923 61.9032 20.6943C61.5929 20.5963 61.3479 20.4493 61.1682 20.2696C60.9886 20.0736 60.8742 19.845 60.8089 19.5673C60.7436 19.2896 60.7109 18.9466 60.6946 18.5873L60.6946 13.3606L59.2082 13.3606L59.2082 11.8743L59.2082 11.907ZM65.7906 11.907L67.6362 11.907L67.6362 13.1156L67.6689 13.1156C67.9466 12.593 68.3222 12.2336 68.8122 12.005C69.3022 11.7763 69.8249 11.662 70.4129 11.662C71.1152 11.662 71.7196 11.7763 72.2422 12.0376C72.7649 12.2826 73.1896 12.6093 73.5326 13.0503C73.8756 13.475 74.1369 13.9813 74.3003 14.553C74.4636 15.1246 74.5616 15.7453 74.5616 16.3823C74.5616 16.9866 74.4799 17.5583 74.3329 18.1136C74.1696 18.669 73.9409 19.1753 73.6306 19.6C73.3202 20.0246 72.9283 20.3676 72.4383 20.629C71.9483 20.8903 71.3929 21.021 70.7396 21.021C70.4619 21.021 70.1679 20.9883 69.8902 20.9393C69.6126 20.8903 69.3349 20.8086 69.0736 20.6943C68.8122 20.58 68.5672 20.433 68.3549 20.2533C68.1262 20.0736 67.9466 19.8613 67.7996 19.6326L67.7669 19.6326L67.7669 24.059L65.8069 24.059L65.8069 11.907L65.7906 11.907ZM72.6343 16.3496C72.6343 15.9576 72.5853 15.5656 72.4709 15.19C72.3729 14.8143 72.2096 14.4876 71.9973 14.1936C71.7849 13.8996 71.5236 13.671 71.2296 13.4913C70.9193 13.3116 70.5599 13.23 70.1679 13.23C69.3513 13.23 68.7306 13.5076 68.3059 14.0793C67.8976 14.651 67.6852 15.4186 67.6852 16.366C67.6852 16.8233 67.7342 17.2316 67.8486 17.6073C67.9629 17.983 68.1099 18.3096 68.3386 18.5873C68.5509 18.865 68.8122 19.0773 69.1226 19.2406C69.4329 19.404 69.7759 19.4856 70.1843 19.4856C70.6416 19.4856 71.0009 19.3876 71.3112 19.208C71.6216 19.0283 71.8666 18.7833 72.0789 18.5056C72.2749 18.2116 72.4219 17.885 72.5036 17.5093C72.5853 17.1173 72.6343 16.7416 72.6343 16.3496ZM76.0806 8.52597L78.0406 8.52597L78.0406 10.3716L76.0806 10.3716L76.0806 8.52597ZM76.0806 11.907L78.0406 11.907L78.0406 20.776L76.0806 20.776L76.0806 11.907ZM79.7883 8.52597L81.7483 8.52597L81.7483 20.776L79.7883 20.776L79.7883 8.52597ZM87.7263 21.021C87.0239 21.021 86.3869 20.9066 85.8316 20.6616C85.2763 20.4166 84.8189 20.1063 84.4269 19.698C84.0513 19.2896 83.7573 18.7833 83.5613 18.2116C83.3653 17.64 83.2509 17.003 83.2509 16.3333C83.2509 15.6636 83.3489 15.043 83.5613 14.4713C83.7573 13.8996 84.0513 13.4096 84.4269 12.985C84.8026 12.5766 85.2763 12.25 85.8316 12.0213C86.3869 11.7926 87.0239 11.662 87.7263 11.662C88.4286 11.662 89.0656 11.7763 89.6209 12.0213C90.1763 12.25 90.6336 12.5766 91.0256 12.985C91.4013 13.3933 91.6953 13.8996 91.8913 14.4713C92.0873 15.043 92.2016 15.6636 92.2016 16.3333C92.2016 17.0193 92.1036 17.64 91.8913 18.2116C91.6789 18.7833 91.4013 19.2733 91.0256 19.698C90.6499 20.1063 90.1763 20.433 89.6209 20.6616C89.0656 20.8903 88.4449 21.021 87.7263 21.021ZM87.7263 19.4693C88.1509 19.4693 88.5429 19.3713 88.8533 19.1916C89.1799 19.012 89.4249 18.767 89.6373 18.473C89.8496 18.179 89.9966 17.836 90.0946 17.4766C90.1926 17.101 90.2416 16.7253 90.2416 16.3333C90.2416 15.9576 90.1926 15.582 90.0946 15.2063C89.9966 14.8306 89.8496 14.504 89.6373 14.21C89.4249 13.916 89.1636 13.6873 88.8533 13.5076C88.5266 13.328 88.1509 13.23 87.7263 13.23C87.3016 13.23 86.9096 13.328 86.5993 13.5076C86.2726 13.6873 86.0276 13.9323 85.8153 14.21C85.6029 14.504 85.4559 14.8306 85.3579 15.2063C85.2599 15.582 85.2109 15.9576 85.2109 16.3333C85.2109 16.7253 85.2599 17.101 85.3579 17.4766C85.4559 17.8523 85.6029 18.179 85.8153 18.473C86.0276 18.767 86.2889 19.012 86.5993 19.1916C86.9259 19.3876 87.3016 19.4693 87.7263 19.4693ZM92.7896 11.907L94.2759 11.907L94.2759 9.2283L96.2359 9.2283L96.2359 11.8906L97.9999 11.8906L97.9999 13.3443L96.2359 13.3443L96.2359 18.081C96.2359 18.2933 96.2523 18.4566 96.2686 18.62C96.2849 18.767 96.3339 18.8976 96.3829 18.9956C96.4483 19.0936 96.5463 19.1753 96.6606 19.2243C96.7913 19.2733 96.9546 19.306 97.1833 19.306C97.3139 19.306 97.4609 19.306 97.5916 19.2896C97.7223 19.2733 97.8693 19.257 97.9999 19.2243L97.9999 20.7433C97.7876 20.776 97.5753 20.7923 97.3629 20.8086C97.1506 20.8413 96.9546 20.8413 96.7259 20.8413C96.2033 20.8413 95.7949 20.7923 95.4846 20.6943C95.1743 20.5963 94.9293 20.4493 94.7496 20.2696C94.5699 20.0736 94.4556 19.845 94.3903 19.5673C94.3249 19.2896 94.2923 18.9466 94.2759 18.5873L94.2759 13.3606L92.7896 13.3606L92.7896 11.8743L92.7896 11.907Z"
+                    fill="white"></path>
+                <path
+                    d="M23.471 8.52601L14.504 8.52601L11.7437 -1.02666e-06L8.96701 8.52601L7.43939e-07 8.50968L7.25201 13.7853L4.47534 22.3114L11.7273 17.0357L18.9793 22.3114L16.219 13.7853L23.471 8.52601Z"
+                    fill="#00B67A"></path>
+                <path d="M16.8397 15.7127L16.219 13.7853L11.7437 17.0357L16.8397 15.7127Z" fill="#005128"></path>
+            </svg>
+            <div id="t4-9" class="flex gap-2 md:gap-1">
+                <div class="md:text-sm ">4.9</div><svg fill="none" height="22" viewBox="0 0 23 22" width="23"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect fill="#00B67A" height="21.6871" rx="2.33871" width="22.5104" y="0.185944"></rect>
+                    <path
+                        d="M13.2207 9.16251L19.587 9.16251L11.261 15.2041L14.879 14.2648L14.4474 12.9244L16.398 18.9496L11.2494 15.2041L6.10068 18.9496L8.07202 12.8965L2.92334 9.15092L9.28962 9.16251L11.261 3.10933L13.2207 9.16251Z"
+                        fill="white"></path>
+                </svg>
+            </div>
+            <div>
+                <p>Rated Excellent </p>
+                <p>Based on 7743 reviews</p>
+            </div>
+        </div>
+        <div id="swiper-slideDiv">
+            <swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
+                pagination-clickable="true">
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>TS</p>
+                    </div>
+                    <h3>Travis sly</h3>
+                    <div id="section5SliderDivP">
+                        <p>Eruka was a fanstatic Booster. Very </p>
+                        <p> knowledgeable and supportive, they went</p>
+                        <p> above and beyond with feedback and continual</p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>november 8 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>LB</p>
+                    </div>
+                    <h3>Laura Beerden</h3>
+                    <div id="section5SliderDivP">
+                        <p>He fact that a responses really faster (when </p>
+                        <p> possible) I know what hé was doing when. </p>
+                    </div>
+                    <div id="s5sliderdivData2">
+                        <p>november 1 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>LB</p>
+                    </div>
+                    <h3>Black.messam</h3>
+                    <div id="section5SliderDivP">
+                        <p>Im very happinnes about this player 257awake </p>
+                        <p>it was a helpful to heal my account.</p>
+                    </div>
+                    <div id="s5sliderdivData2">
+                        <p>november 7 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>LB</p>
+                    </div>
+                    <h3>Truly Guthix </h3>
+                    <div id="section5SliderDivP">
+                        <p>Im very happinnes about this player 257awake </p>
+                        <p>it was a helpful to heal my account.</p>
+                    </div>
+                    <div id="s5sliderdivData2">
+                        <p>november 7 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+
+                    <div id="srction5slaider">
+                        <p>TG</p>
+                    </div>
+                    <h3>Truly Guthix</h3>
+                    <div id="section5SliderDivP">
+                        <p> The duo partner was amazing that I was lucky to </p>
+                        <p> get paired with. Their ganks were super awesome. </p>
+                        <p> 120% awesome :D</p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>november 6 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>C</p>
+                    </div>
+                    <h3>Cedric</h3>
+                    <div id="section5SliderDivP">
+                        <p> This is my second order with Eruka and what </p>
+                        <p> more can I say than magical! 100% WR!!! not a </p>
+                        <p> single lose and in the end a s</p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>October 24 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>ED</p>
+                    </div>
+                    <h3>El Desertor</h3>
+                    <div id="section5SliderDivP">
+                        <p> The service provider was excellent and did an </p>
+                        <p> outstanding job and was done in a timely </p>
+                        <p> fashion.</p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>November 1 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>T</p>
+                    </div>
+                    <h3>Thomas</h3>
+                    <div id="section5SliderDivP">
+                        <p> The service is performed quickly and with great </p>
+                        <p> professionalism.Very satisfied with my </p>
+                        <p>experience </p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>November 1 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+
+                </swiper-slide>
+                <swiper-slide class="swiper-slide">
+                    <div id="srction5slaider">
+                        <p>TS</p>
+                    </div>
+                    <h3>Tis sue</h3>
+                    <div id="section5SliderDivP">
+                        <p> They have an efficient and nice booster that </p>
+                        <p> uses only 8 games promoted from Diamond</p>
+                        <p> Two to master</p>
+                    </div>
+                    <div id="s5sliderdivData">
+                        <p>November 1 2023</p>
+                    </div>
+                    <div id="sec5StarSlider"
+                        class="flex items-center gap-1 text-sm text-green border border-green/10 rounded-xl px-3 py-1">
+                        5<svg width="25" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2208 6.13302L17.5871 6.13302L9.26113 12.1746L12.8791 11.2353L12.4475 9.89494L14.3982 15.9202L9.24949 12.1746L4.1008 15.9202L6.07215 9.86697L0.923462 6.12142L7.28974 6.13302L9.26108 0.079834L11.2208 6.13302Z"
+                                fill="#00B67A"></path>
+                        </svg></div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <div id="sec5titer">
+            <h3>Your Satisfaction is Guaranteed</h3>
+            <p>About BoostRoyal</p>
+        </div>
+        <div id="sec5cartdiv">
+            <div id="sec5cart1" class="sec5cart">
+                <img src="img/feature-icon-1.svg" alt="#">
+                <h3>10 Years of Expertise</h3>
+                <div>
+                    <p>Boostroyal's help center includes</p>
+                    <p>24/7 live chat support and phone</p>
+                    <p>assistance, offering any help related</p>
+                    <p>to your ELO boost.</p>
+                </div>
+            </div>
+            <div id="sec5cart2" class="sec5cart">
+                <img src="img/feature-icon-2.svg" alt="#">
+                <h3>Secured Private Data</h3>
+                <div>
+                    <p>We use VPN protection to maximize</p>
+                    <p>LoL boost safety and 256 bit SSL</p>
+                    <p>encryption to maximize client data</p>
+                    <p>security.</p>
+                </div>
+            </div>
+            <div id="sec5cart3" class="sec5cart">
+                <img src="img/feature-icon-3.svg" alt="#">
+                <h3>Refund Policy</h3>
+                <div>
+                    <p>Our refund policy gives more</p>
+                    <p>flexibility for clients. Buyers are</p>
+                    <p>eligible to receive full or partial</p>
+                    <p>refunds according to the progress.</p>
+                </div>
+            </div>
+        </div>
+        <div id="sec5TitrFrequently">
+            <div id="sec5TitrFrequentlydivvh3">
+                <h3>Frequently Asked Questions</h3>
+            </div>
+        </div>
+        <div id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        How does our rank boosting work?
+                    </li>
+                    <li class="sec5lip2">
+                        <p> Are you wondering how everything works? We've made our process super straightforward. Once
+                            you purchase from us, one of our high-ranked players will </p>
+                        <p> play on your account to help you reach the rank you desire. It's that easy!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        Why choose us?
+                    </li>
+                    <li class="sec5lip2">
+                        <p> If you are looking to level up your game, we are the perfect company for you! We know
+                            exactly how to help our clients reach their goals and achieve the rank </p>
+                        <p> they want.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        How much does a LoL boost cost?
+                    </li>
+                    <li class="sec5lip2">
+                        <p> The cost of a League boost heavily depends on your chosen service and rank. However, lower
+                            ranks can be as little as $10, making our service incredibly </p>
+                        <p> affordable.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        How long does a League boost take?
+                    </li>
+                    <li class="sec5lip2">
+                        <p> Our players are super experienced, and they will be able to do it quickly and efficiently,
+                            so you don't have to worry about them taking too long or making </p>
+                        <p> mistakes. The time it takes to complete a LoL boost depends on the service you choose and
+                            the rank you want to achieve. However, most orders are</p>
+                        <p>completed within 1-2 days.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        What are the benefits?
+                    </li>
+                    <li class="sec5lip2">
+                        <p> Many benefits come with our service, including an improved rank, better rewards, and faster
+                            progression through the game. </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        What makes sure that my account won't get stolen?
+                    </li>
+                    <li class="sec5lip2">
+                        <p>We take security very seriously and have never had an issue with account theft. We use VPNs
+                            to keep your account safe and secure. In addition, we only work </p>
+                        <p>with the most trusted and experienced players.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        Can I select a role or champion?
+                    </li>
+                    <li class="sec5lip2">
+                        <p>Yes, our boosters are highly adaptable and can play any champion and role you want. Request
+                            your roles or champions when checking out. </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        Can I be banned for boosting?
+                    </li>
+                    <li class="sec5lip2">
+                        <p>While there is a small risk, at BoostRoyal, we are proud to have no bans whatsoever. We take
+                            security and privacy very seriously and use the latest</p>
+                        <p>technologies to protect your account. In addition, we only hire the most experienced and
+                            trusted boosters.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        How will I know when my order is complete?
+                    </li>
+                    <li class="sec5lip2">
+                        <p>We will send you a notification when your order is complete. You can also check the status of
+                            your order at any time by logging into your account.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec5cartcolc" id="sec5cartcol">
+            <div>
+                <ul>
+                    <li class="sec5lip1">
+                        I still have more questions. Where can I get more information?
+                    </li>
+                    <li class="sec5lip2">
+                        <p>You can always contact us for more information! We will be happy to answer any questions you
+                            may have.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section6">
+        <div id="sec6svgbookh3">
+            <svg id="sec6svgbook" fill="none" height="40" viewBox="0 0 40 40" width="40"
+                xmlns="http://www.w3.org/2000/svg" class="⭐️m96g9c-4">
+                <path d="M15.3125 37.6562H0V40H18.6266C18.1428 38.636 16.8402 37.6562 15.3125 37.6562Z" fill="#FF9155"
+                    class="⭐️m96g9c-4"></path>
+                <path
+                    d="M0 3.51562V35.3125H15.3125C16.6305 35.3125 17.8482 35.7499 18.8281 36.4872C18.8281 34.5458 17.251 32.9688 15.3125 32.9688H2.34375V3.51562H0Z"
+                    fill="#FF9155" class="⭐️m96g9c-4"></path>
+                <path
+                    d="M37.6562 32.9688H24.6875C22.749 32.9688 21.1719 34.5459 21.1719 36.4844C22.1518 35.7499 23.3695 35.3125 24.6875 35.3125H40V3.51562H37.6562V32.9688Z"
+                    fill="#FF9155" class="⭐️m96g9c-4"></path>
+                <path
+                    d="M21.1719 31.7996C22.1518 31.0625 23.3696 30.625 24.6875 30.625H35.3125V0H24.6875C22.749 0 21.1719 1.57711 21.1719 3.51562V31.7996Z"
+                    fill="#FF9155" class="⭐️m96g9c-4"></path>
+                <path
+                    d="M18.8281 31.8001V3.51562C18.8281 1.57711 17.251 0 15.3125 0H4.6875V30.625H15.3125C16.6305 30.625 17.8481 31.0627 18.8281 31.8001Z"
+                    fill="#FF9155" class="⭐️m96g9c-4"></path>
+                <path d="M21.3735 40H40.0001V37.6562H24.6876C23.1599 37.6562 21.8573 38.636 21.3735 40Z" fill="#FF9155"
+                    class="⭐️m96g9c-4"></path>
+            </svg>
+            <h3>Read more about BoostRoyal</h3>
+        </div>
+
+        <swiper-container id="swiper-containerScrooll" class="mySwiper" scrollbar="true" direction="vertical"
+            slides-per-view="auto" free-mode="true" mousewheel="true">
+
+            <swiper-slide id="swiper-slideScrool">
+                <!-- <i id="sec6iconscrol" class='bx bx-check'></i> -->
+                <div id="src6TitrScrool">
+                    <i id="sec6iconscrol" class='bx bx-check'></i>
+                    <h3>Over 10 Years of LoL Boosting</h3>
+                </div>
+                <div id="swiper-slideScrooldivp">
+                    <div>
+                        <p>In a world where new competitors are emerging every day, we continue to stay ahead of the
+                            game by providing our customers with a customer-oriented boosting service
+                            they can trust. Our website has been operating for well over ten years, and throughout this
+                            time, we have gained invaluable experience in the boosting and game-
+                            progression industry. Our team of boosters, admins, and support agents are some of the most
+                            qualified in the field and are dedicated to providing our customers with top-
+                            tier service year on year. We also know that our customers come first, and our team is
+                            always striving to provide the best possible service, all while staying up to date with
+                            changes, trends, and features within the boosting industry. Our track record of success is a
+                            testament to our skills and expertise. We have a proven ability to help players
+                            achieve their goals, and we are confident we can do the same for you! So, if you're looking
+                            for a fast, safe, and affordable way to rank up, look no further than BoostRoyal!</p>
+                    </div>
+                </div>
+                <div class="src6TitrScroolmargin-top" id="src6TitrScrool">
+                    <i id="sec6iconscrol" class='bx bx-check'></i>
+                    <h3>Handpicked Challenger Elo Boosters</h3>
+                </div>
+                <div id="swiper-slideScrooldivp">
+                    <div>
+                        <p>
+                            Our boosting team is one of the very best! We handpick our boosters, who go through an
+                            intensive process to ensure nothing but quality. We take absolute pride in our employees and
+                            their work and are fully dedicated to providing our customers with the ultimate service.
+                            Unlike some other platforms, the minimum requirement to boost is challenger with prior
+                            experience in boosting or professional play. Our boosters are extremely friendly,
+                            professional, and certified, making sure that your elo boosting experience is nothing less
+                            than excellent. They are also here to provide tips, tricks and answer any questions you may
+                            have during the process. We know that not everyone has the time to grind out games and climb
+                            the ranks themselves. Our team offers a speedy service that will get you to where you want
+                            to be in no time. All you need to do is provide us with your desired rank, and our team of
+                            experts will take care of the rest!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="src6TitrScroolmargin-top" id="src6TitrScrool">
+                    <i id="sec6iconscrol" class='bx bx-check'></i>
+                    <h3>Serious About Security</h3>
+                </div>
+                <div id="swiper-slideScrooldivp">
+                    <div>
+                        <p>
+                            When looking for a LoL rank boost, it's essential to ensure you're working with a reputable
+                            and safe company. At BoostRoyal, we have prioritized security since day one. Our boosters
+                            are experienced, certified, and use state-of-the-art security measures to protect your
+                            account. Our system also means your information is hidden from everyone, including the
+                            booster working/playing on your account. We want you to feel confident that your account is
+                            safe and secure when working with us. We take security seriously and do everything we can to
+                            protect your account, and it's working! Since our company started, we have had absolutely
+                            zero bans and remain the safest boosting company. So if you're looking for a safe and secure
+                            way to improve your ranking, BoostRoyal is the right place for you.
+                        </p>
+                    </div>
+                </div>
+                <div class="src6TitrScroolmargin-top" id="src6TitrScrool">
+                    <i id="sec6iconscrol" class='bx bx-check'></i>
+                    <h3>The Ultimate Rank Solution</h3>
+                </div>
+                <div id="swiper-slideScrooldivp">
+                    <div>
+                        <p>
+                            League is a popular yet fun online game. But for some, the game can be challenging and
+                            frustrating, which is especially true if you struggle to reach your dream rank. A LoL elo
+                            boost can alleviate the frustration and help you get to your desired rank fast, efficiently,
+                            and safely; it can also increase your overall experience within the game. You will be able
+                            to skip through the lower ranks and go straight to where you want to be, saving you precious
+                            time and plenty of frustration. Whether you are looking to get to the next rank up or
+                            improve, we can help you. We offer different types of services to reach your goals,
+                            including:
+                        </p>
+                    </div>
+                </div>
+                <div class="src6TitrScroolmargin-top" id="src6TitrScrool">
+                    <i id="sec6iconscrol" class='bx bx-check'></i>
+                    <h3>Progression Made Easy</h3>
+                </div>
+                <div id="swiper-slideScrooldivp">
+                    <div>
+                        <p>
+                            If you're looking to progress in League, our service can help you achieve your goals in next
+                            to no time. A good boost can help you climb up the ladder faster, meaning you can reach your
+                            desired rank effortlessly. But that's not all. You will be giving yourself a competitive
+                            advantage over other players. With our service, you can learn new strategies, tips, and
+                            tricks from our pro boosters, who are some of the best players in the world. If you're
+                            looking for a great way to improve and increase your rank in League, then look no further
+                            than our expert services.
+                        </p>
+                    </div>
+                </div>
+
+            </swiper-slide>
+        </swiper-container>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </section>
+    <section id="section7">
+        <div id="section5imgdivdivv">
+            <div id="section5imgdiv">
+                <img id="section5img" src="img/new-home-slider-bg.webp" alt="#">
+            </div>
+            <div id="sec7pimg">
+                <h3 class="sec7pimgh3">Don't waste more time in low ELO</h3>
+                <p class="sec7pimgp">Start playing on your new rank today.</p>
+                <button id="sec7btn1">
+                    Rank-up now
+                </button>
+            </div>
+        </div>
+        <div id="sec7titr">
+            <h3 class="sec7ph3">Latestblog</h3>
+            <p class="sec7pp">Latest news</p>
+        </div>
+        <div id="sec7pp2div">
+            <u class="sec7pp2">View all news</u>
+        </div>
+        <div id="sec7cart1">
+            <div id="sec7cart1div">
+                <div id="sec7cart1div1">
+                    <img src="img/calendar.svg" alt="">
+                    <p>Wed Nov 08 2023</p>
+                </div>
+                <div>
+                    <h3>The Ultimate Guide to</h3>
+                    <h3>VALORANT: 12 Tips to Play Like a</h3>
+                    <h3>Pro</h3>
+                </div>
+                <div id="sec7divp2">
+                    <p>If you’re sick of getting dominated in VALORANT , you’ve come to </p>
+                    <p>the right place. In this article, we will explore the best tips that </p>
+                    <p>beginners sh...</p>
+                </div>
+                <h6>Read more</h6>
+            </div>
+        </div>
+        <div class="sec7cart1class" id="sec7cart1">
+            <div id="sec7cart1div">
+                <div id="sec7cart1div1">
+                    <img src="img/calendar.svg" alt="">
+                    <p>Wed Nov 01 2023</p>
+                </div>
+                <div>
+                    <h3>VALORANT Premier Guide:</h3>
+                    <h3> Everything You Need to Know </h3>
+                </div>
+                <div id="sec7divp2">
+                    <p>VALORANT Premier is a new tournament format that will </p>
+                    <p> eventually link to the VALORANT Champions Tour (VCT) pro </p>
+                    <p> scene. The main purpose of introducing this mode of gameplay </p>
+                    <p>is to allow players an op...o</p>
+                </div>
+                <h6>Read more</h6>
+            </div>
+        </div>
+        <div id="sec7paymentimgdiv">
+            <img id="imgpaymenticonssvg" src="img/payment-icons.svg" alt="#">
+        </div>
+        <div id="solidhr"></div>
+        <div id="foterunited">
+            <div id="sec7pimg">
+                <img id="imglogooofoter" src="img/logooo-icon (1).svg" alt="">
+                <ul>
+                    <li>
+                        <p>BoostRoyal isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot
+                            Games
+                            or anyone officially involved in</p>
+                    </li>
+                    <li>
+                        <p>producing or managing League of Legends. League of Legends and Riot Games are trademarks or
+                            registered trademarks of Riot</p>
+                    </li>
+                    <li>
+                        <p>Games, Inc. League of Legends © Riot Games, Inc.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="sec7Englishlogofoter">
+                <img id="unitedimg" src="img/united-states-of-america.svg" alt="">
+                <p>English</p>
+            </div>
+        </div>
+        <div id="footerMoregamesdivv">
+            <div id="footerMoregames">
+                <p id="mMoregames">More games</p>
+            </div>
+            <div id="sec7footerp">
+                <p>Dota 2 Boosting </p>
+                <p>Apex Boosting</p>
+                <p>Rocket League Boosting</p>
+                <p>Rainbow Six Boosting</p>
+                <p>Overwatch 2 Boosting</p>
+                <p>igitems</p>
+            </div>
+        </div>
+        <div id="solidhr2divv">
+            <div class="solidhr2class" id="solidhr2"></div>
+            <div class="footerMoregamesclaas" id="footerMoregames">
+                <p>Legal</p>
+            </div>
+            <div id="sec7footerp2">
+                <p>Terms of use</p>
+                <p>Privacy policy</p>
+                <p>DMCA Notice</p>
+                <p>Newsletter</p>
+            </div>
+            <div id="sec7footr2014-2023BoostRoyal">
+                <p>© 2014-2023 BoostRoyal - All Rights Reserved</p>
+            </div>
+            <div id="sec7divimgfooter">
+                <img src="img/facebook.svg " alt="#">
+                <img src="img/instagram.svg" alt="#">
+                <img src="img/twitter.svg  " alt="#">
+                <img src="img/skype.svg    " alt="#">
+                <img src="img/tiktok.svg   " alt="#">
+                <img src="img/youtube.svg  " alt="#">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
